@@ -1,4 +1,5 @@
-# babel-plugin-review-no-cover
+# babel-plugin-rewire-ignore-coverage
+
 
 This plugin disables rewire injected methods from istanbul coverage counts.
 
