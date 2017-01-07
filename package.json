@@ -1,12 +1,12 @@
 {
   "name": "babel-plugin-rewire-ignore-coverage",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "disable instanbul coverage on rewire injection by adding comments",
   "repository": "babel-plugin-rewire-ignore-coverage",
   "license": "MIT",
   "main": "index.js",
   "devDependencies": {
-    "babel": "^5.6.0"
+    "babel-runtime": "^6.9.2"
   },
   "keywords": [
     "babel-plugin"
