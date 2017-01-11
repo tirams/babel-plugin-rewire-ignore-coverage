@@ -21,8 +21,17 @@ module.exports = function({types: t}) {
                         addIgnoreComment(path, false);
                     }
                 }
+            },
+            VariableDeclaration: function VariableDeclaration(path) {
+                if (path.node.kind == 'var') {
+                    for (var i = 0; i < path.node.declarations.length; i++) {
+                        var declar = path.node.declarations[i];
+                        if (declar.id && declar.id.name && declar.id.name == '_typeof') {
+                            addIgnoreComment(path, true);
+                        }
+                    }
+                }
             }
         }
-
     };
 };
